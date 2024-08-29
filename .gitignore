@@ -6,6 +6,20 @@ __pycache__/
 # C extensions
 *.so
 
+# Django
+*.log
+*.pot
+*.pyc
+*.swp
+db.sqlite3
+db.sqlite3-journal
+*.sqlite3
+media/
+staticfiles/
+.static/
+
+
+
 # Distribution / packaging
 .Python
 build/
@@ -60,6 +74,24 @@ cover/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
 # Flask stuff:
 instance/
@@ -129,6 +161,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+settings_local.py
+.vscode/
+
 
 # Spyder project settings
 .spyderproject
