@@ -4,7 +4,7 @@
 ##User guide:
 mapo Projektna naloga shranimo v virtualnem okolju, potrebne knjižnjice instaliramo
 ```bash
-pip3 install -r requirements.txt```
+pip3 install -r requirements.txt
 
 in ustvarimo databazo z vsemi modeli
 
