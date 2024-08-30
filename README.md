@@ -1,26 +1,30 @@
-<img width="1512" alt="image" src="https://github.com/user-attachments/assets/9cfa692c-52aa-4651-8cf7-42f27d32243f"># ProjektnaNaloga
+# ProjektnaNaloga
 #Za Uvod v programiranje
 
 ##User guide:
 mapo Projektna naloga shranimo v virtualnem okolju, potrebne knjižnjice instaliramo
 ```bash
 pip3 install -r requirements.txt
+```
 
 in ustvarimo databazo z vsemi modeli
 
 ```bash
 python3 manage.py makemigrations
-python3 manage.py migrate```
+python3 manage.py migrate
+```
 
 Django ima ugrajeno admin funkcionalnost, ki omogoča dober pregled nad dataabazo v zavihku /admin. Za dostop pa je potreben administrativni profil, ki ga je najlažje narediti kar v terminalu
 
 ```bash
-python3 manage.py createsuperuser```
+python3 manage.py createsuperuser
+```
 
 ko ustvarimo profil, poženemo developement server tako:
 
 ```bash
-python3 manage.py runserver```
+python3 manage.py runserver
+```
 
 na http://127.0.0.1:8000/admin nas pozdravi nekaj takega:
 <img width="1512" alt="image" src="https://github.com/user-attachments/assets/4a1f7063-1a35-4769-8c6a-6ffca80c325b">
