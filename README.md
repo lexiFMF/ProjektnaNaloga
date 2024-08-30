@@ -10,8 +10,8 @@ pip3 install -r requirements.txt
 in ustvarimo databazo z vsemi modeli
 
 ```bash
+python3 manage.py migrate --run-syncdb
 python3 manage.py makemigrations
-python3 manage.py migrate
 ```
 
 Django ima ugrajeno admin funkcionalnost, ki omogoča dober pregled nad dataabazo v zavihku /admin. Za dostop pa je potreben administrativni profil, ki ga je najlažje narediti kar v terminalu
