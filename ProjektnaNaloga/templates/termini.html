@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Termini
+{% endblock %}
+
+{% block content %}
+    <h1>Termini za vašo kombinacijo:</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Kategorija</th>
+                <th>Lokacija</th>
+                <th>Datum</th>
+                <th>Število mest</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for termin in termini %}
+            <tr>
+                <td>{{ termin.get_kategorija_display }}</td>
+                <td>{{ termin.get_lokacija_display }}</td>
+                <td>{{ termin.datum_in_cas }}</td>
+                <td>{{ termin.st_mest }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

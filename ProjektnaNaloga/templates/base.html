@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Prej do glavne vožnje{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Prej do glavne vožnje</h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    {% if user.is_authenticated %}
+                    <li><a href="{% url 'execute' %}">Execute</a></li>
+                    <li><a href="{% url 'atributi' %}">Atributi</a></li>
+                    <li><a href="{% url 'termini' %}">Termini</a></li>
+                    {% else %}
+                    <li><a href="{% url 'prijava' %}">Prijava</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>

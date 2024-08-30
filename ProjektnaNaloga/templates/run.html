@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Zalaufaj program!
+{% endblock %}
+
+{% block content %}
+    <h1>just a step away</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <button type="submit">Zalaufaj</button>
+        </form>
+{% endblock %}
